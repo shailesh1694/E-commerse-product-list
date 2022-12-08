@@ -1,0 +1,64 @@
+* {
+  /* background-color: lightgray; */
+  box-sizing: border-box;
+  margin: 10px;
+}
+input {
+  width: 40vw;
+}
+
+main {
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.container {
+  background-color: lightgray;
+  height: 170px;
+
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  grid-template-rows: repeat(1, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+.item {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.item-description {
+  display: grid;
+  align-self: center;
+}
+.item-add-remove {
+  display: grid;
+  grid-template-columns: repeat(3, 45px);
+  justify-items: center;
+  align-items: center;
+}
+.item-price-remove {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.add-button {
+  display: grid;
+  justify-self: center;
+}
+.remove-button {
+  justify-self: center;
+}
+@media (max-width: 786px) {
+  .container {
+    width: 40vh;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+}
